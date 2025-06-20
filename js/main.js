@@ -644,7 +644,7 @@ const LolaApp = (function() {
                 const formData = new FormData(reservationForm);
                 
                 // Envoyer via fetch (AJAX) - pas de redirection
-                fetch('https://formsubmit.co/docozozo70@gmail.com', {
+                fetch('https://formsubmit.co/maddie.son.lola@gmail.com', {
                     method: 'POST',
                     body: formData
                 })
@@ -700,7 +700,7 @@ const LolaApp = (function() {
                 const formData = new FormData(contentForm);
                 
                 // Envoyer via fetch (AJAX) - pas de redirection
-                fetch('https://formsubmit.co/docozozo70@gmail.com', {
+                fetch('https://formsubmit.co/maddie.son.lola@gmail.com', {
                     method: 'POST',
                     body: formData
                 })
@@ -756,7 +756,7 @@ const LolaApp = (function() {
                 const formData = new FormData(reviewForm);
                 
                 // Envoyer via fetch (AJAX) - pas de redirection
-                fetch('https://formsubmit.co/docozozo70@gmail.com', {
+                fetch('https://formsubmit.co/maddie.son.lola@gmail.com', {
                     method: 'POST',
                     body: formData
                 })
