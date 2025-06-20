@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lola Anaïs - Masseuse professionnelle et créatrice de contenus exclusifs à Paris. Massages sensuels, tantriques et services personnalisés.">
+    <meta name="keywords" content="massage sensuel, massage tantrique, masseuse professionnelle, Paris, contenus exclusifs">
+    <meta name="author" content="Lola Anaïs">
+    <meta name="theme-color" content="#d4af37">
+    
+    <title>NYX Massage - Massage Professionnel & Création de Contenus</title>
+    
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Feuilles de style - Optimisé pour charger uniquement les polices nécessaires -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Lien d'accessibilité pour sauter la navigation -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Video Background - Optimisé avec lazy loading -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source data-src="assets/videos/background.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo" aria-label="Lola Anaïs - Accueil">NYX Massage</a>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Menu principal" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="accueil" class="section">
+            <div class="container">
+                <div class="hero">
+                    <h1>NYX Massage</h1>
+                    <p class="subtitle">Massage Professionnel & Création de Contenus Exclusifs</p>
+                    <p class="description">
+                        Découvrez l'art du massage sensuel dans un cadre intime et raffiné. 
+                        Une expérience unique alliant détente profonde et plaisirs subtils.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="openModal('reservationModal')">
+                            <i class="fas fa-calendar-alt" aria-hidden="true"></i> Réserver une Séance
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services">
+            <div class="container">
+                <h2>Mes Services Exclusifs</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-spa" aria-hidden="true"></i>
+                        <h3>Massage Sensuel Classique</h3>
+                        <p>Un massage relaxant aux huiles chaudes qui éveille tous vos sens. Technique douce et enveloppante pour une détente absolue.</p>
+                        <div class="service-price">
+                            <span class="price-amount">100€</span>
+                        </div>
+                        <a href="#" class="btn-reserve" onclick="openModal('reservationModal')">
+                            Réserver
+                        </a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-fire" aria-hidden="true"></i>
+                        <h3>Massage Tantrique</h3>
+                        <p>Exploration des énergies intimes dans le respect et la sensualité. Une expérience spirituelle et corporelle unique.</p>
+                        <div class="service-price">
+                            <span class="price-amount">150€</span>
+                        </div>
+                        <a href="#" class="btn-reserve" onclick="openModal('reservationModal')">
+                            Réserver
+                        </a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                        <h3>Massage pour Couples</h3>
+                        <p>Renforcez votre complicité à travers un massage partagé. Techniques adaptées pour raviver la flamme.</p>
+                        <div class="service-price">
+                            <span class="price-amount">250€</span>
+                        </div>
+                        <a href="#" class="btn-reserve" onclick="openModal('reservationModal')">
+                            Réserver
+                        </a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-fire" aria-hidden="true"></i>
+                        <h3>Massage Erotique</h3>
+                        <p>Une expérience sensuelle intense qui éveille tous vos sens. Explorez les confins du plaisir en optant pour une formule complète et magique.</p>
+                        <div class="service-price">
+                            <span class="price-amount">Premium</span>
+                        </div>
+                        <a href="#" class="btn-reserve" onclick="openModal('reservationModal')">
+                            Réserver
+                        </a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-camera" aria-hidden="true"></i>
+                        <h3>Création de Contenu Personnalisé</h3>
+                        <p>Contenus exclusifs et sur-mesure selon vos fantasmes. Discrétion et qualité professionnelle garanties.</p>
+                        <div class="service-price">
+                            <span class="price-amount">Sur devis</span>
+                        </div>
+                        <a href="#" class="btn-reserve" onclick="openModal('contentModal')">
+                            Réserver
+                        </a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                        <h3>Séances Nocturnes</h3>
+                        <p>Disponibilité en soirée pour des moments d'exception. Ambiance tamisée et atmosphère feutrée.</p>
+                        <div class="service-price">
+                            <span class="price-amount">Sur devis</span>
+                        </div>
+                        <a href="#" class="btn-reserve" onclick="openModal('reservationModal')">
+                            Réserver
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie Privée Section -->
+        <section id="galerie" class="section private-gallery">
+            <div class="container">
+                <h2><i class="fas fa-lock" aria-hidden="true"></i> Galerie Privée</h2>
+                <div class="gallery-password-form" id="galleryPasswordForm">
+                    <p style="color: #fff; margin-bottom: 1rem; text-align: center;">
+                        Accès suite à réservation
+                    </p>
+                    <input type="password" id="galleryPassword" placeholder="Mot de passe" aria-label="Mot de passe pour accéder à la galerie privée" />
+                    <button class="btn btn-primary" onclick="checkGalleryPassword()">
+                        <i class="fas fa-unlock" aria-hidden="true"></i> Accéder
+                    </button>
+                </div>
+                <div class="gallery-carousel" id="galleryCarousel" aria-label="Galerie d'images privée">
+                    <!-- Images chargées avec data-src pour améliorer les performances -->
+                    <img data-src="assets/images/IMG_6696.jpg" alt="image1" class="active">
+                    <img data-src="assets/images/IMG_6494.jpg" alt="image2">
+                    <img data-src="assets/images/nyx-massage.jpg" alt="image11">
+                    <img data-src="assets/images/A0F0386F-FA94-4961-92B8-3C3F38ED6A9D.jpg" alt="image3">
+                    <img data-src="assets/images/IMG_6490.jpg" alt="image4">
+                    <img data-src="assets/images/nyx-massage1.jpg" alt="image12">
+                    <img data-src="assets/images/IMG_6577.jpg" alt="image5">
+                    <img data-src="assets/images/nyx-massage2.jpg" alt="image13">
+                    <img data-src="assets/images/IMG_6696.jpg" alt="image6" class="active">
+                    <img data-src="assets/images/nyx-massage7.jpg" alt="image18">
+                    <img data-src="assets/images/IMG_6588.jpg" alt="image7">
+                    <img data-src="assets/images/nyx-massage3.jpg" alt="image14">
+                    <img data-src="assets/images/IMG_6679.jpg" alt="image8">
+                    <img data-src="assets/images/nyx-massage4.jpg" alt="image15">
+                    <img data-src="assets/images/IMG_6705.jpg" alt="image9">
+                    <img data-src="assets/images/nyx-massage5.jpg" alt="image16">
+                    <img data-src="assets/images/IMG_6716.jpg" alt="image10">
+                    <img data-src="assets/images/nyx-massage6.jpg" alt="image17">
+                    <img data-src="assets/images/nyx-massage8.jpg" alt="image18">
+                    <img data-src="assets/images/nyx-massage9.jpg" alt="image19">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>À Propos de Moi</h2>
+                        <p>
+                            Bonjour, je suis Lola Anaïs, masseuse professionnelle passionnée par l'art du bien-être sensuel. 
+                            Formée aux techniques de massage les plus raffinées, je vous accueille dans un univers de douceur et de volupté.
+                        </p>
+                        <p>
+                            Mon approche allie professionnalisme et sensualité, dans le respect absolu de vos limites et de vos désirs. 
+                            Chaque séance est unique, adaptée à votre personnalité et à vos attentes.
+                        </p>
+                        <p>
+                            Créatrice de contenus exclusifs, je propose également des expériences visuelles personnalisées 
+                            pour ceux qui souhaitent prolonger nos moments intimes.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <!-- Image chargée avec data-src pour améliorer les performances -->
+                        <img data-src="assets/images/IMG_6470.png" alt="Lola Anaïs">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="avis" class="section testimonials">
+            <div class="container">
+                <h2>Témoignages Clients</h2>
+                
+                <!-- Barre de statistiques -->
+                <div class="stats-bar">
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="4.9">0</span>
+                            <span class="stat-label">Note Moyenne</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="47">0</span>
+                            <span class="stat-label">Clients Fidèles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carrousel de témoignages - Optimisé pour le chargement progressif -->
+                <div class="testimonials-carousel" aria-label="Témoignages clients">
+                    <div class="testimonials-container">
+                        <div class="testimonials-track" id="testimonialsTrack">
+                            <!-- Les témoignages seront générés par JavaScript avec chargement progressif -->
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn" onclick="previousTestimonial()" aria-label="Témoignage précédent">
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <button class="carousel-btn" onclick="nextTestimonial()" aria-label="Témoignage suivant">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <button class="btn btn-primary" onclick="openModal('reviewModal')">
+                        <i class="fas fa-star" aria-hidden="true"></i> Laisser un Avis
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Contact & Réservations</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <div>
+                                <strong>Zone d'intervention</strong><br>
+                                Paris et zones alentours<br>
+                                Déplacements à domicile et hôtels
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <div>
+                                <strong>Horaires</strong><br>
+                                Lundi - Dimanche : 10h - 23h<br>
+                                Sur rendez-vous uniquement
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            <div>
+                                <strong>Discrétion garantie</strong><br>
+                                Confidentialité absolue<br>
+                                Respect de votre intimité
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-credit-card" aria-hidden="true"></i>
+                            <div>
+                                <strong>Paiement</strong><br>
+                                Espèces, Virement, PayPal<br>
+                                Règlement sécurisé
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-buttons">
+                        <button class="btn btn-primary" onclick="openModal('reservationModal')">
+                            <i class="fas fa-calendar-check" aria-hidden="true"></i> Réserver Maintenant
+                        </button>
+                        <button class="btn btn-secondary" onclick="openModal('contentModal')">
+                            <i class="fas fa-video" aria-hidden="true"></i> Contenu Personnalisé
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lola Anaïs - Tous droits réservés | <a href="mentions-legales.html">Mentions Légales</a></p>
+    </footer>
+
+    <!-- Modals - Optimisés pour la performance -->
+    <!-- Reservation Modal -->
+    <div id="reservationModal" class="modal" aria-labelledby="reservationTitle" role="dialog" aria-modal="false">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal('reservationModal')" aria-label="Fermer">&times;</button>
+            <h3 id="reservationTitle"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Réservation</h3>
+            <form id="reservationForm">
+                <input type="hidden" name="_subject" value="Nouvelle réservation">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <!-- Étape 1 -->
+                <div class="form-step active">
+                    <div class="form-group">
+                        <label for="name">Nom ou Pseudo</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom ou pseudo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Votre email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+                    </div>
+                </div>
+                
+                <!-- Étape 2 -->
+                <div class="form-step">
+                    <div class="form-group">
+                        <label for="service">Service souhaité</label>
+                        <select id="service" name="service" required>
+                            <option value="">Choisir un service</option>
+                            <option value="massage-sensuel">Massage Sensuel Classique</option>
+                            <option value="massage-tantrique">Massage Tantrique</option>
+                            <option value="massage-couple">Massage pour Couples</option>
+                            <option value="service-domicile">Service à Domicile</option>
+                            <option value="seance-nocturne">Séance Nocturne</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date souhaitée</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Heure souhaitée</label>
+                        <input type="time" id="time" name="time" required min="10:00" max="23:00">
+                    </div>
+                </div>
+                
+                <!-- Étape 3 -->
+                <div class="form-step">
+                    <div class="form-group">
+                        <label for="message">Message (optionnel)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Précisions, demandes particulières..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="how-found">Comment m'avez-vous trouvée ?</label>
+                        <select id="how-found" name="how-found">
+                            <option value="">Sélectionner</option>
+                            <option value="recherche">Recherche internet</option>
+                            <option value="recommandation">Recommandation</option>
+                            <option value="reseaux-sociaux">Réseaux sociaux</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-navigation">
+                    <button type="button" id="prevBtn" onclick="changeStep(-1)" disabled>Précédent</button>
+                    <button type="button" id="nextBtn" onclick="changeStep(1)">Suivant</button>
+                    <button type="submit" id="submitBtn" style="display: none;">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Content Modal -->
+    <div id="contentModal" class="modal" aria-labelledby="contentTitle" role="dialog" aria-modal="false">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal('contentModal')" aria-label="Fermer">&times;</button>
+            <h3 id="contentTitle"><i class="fas fa-video" aria-hidden="true"></i> Contenu Personnalisé</h3>
+            <form id="contentForm">
+                <input type="hidden" name="_subject" value="Demande de contenu personnalisé">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <!-- Étape 1 -->
+                <div class="form-step active">
+                    <div class="form-group">
+                        <label for="content-name">Nom ou Pseudo</label>
+                        <input type="text" id="content-name" name="name" required placeholder="Votre nom ou pseudo">
+                    </div>
+                    <div class="form-group">
+                        <label for="content-email">Email</label>
+                        <input type="email" id="content-email" name="email" required placeholder="Votre email">
+                    </div>
+                </div>
+                
+                <!-- Étape 2 -->
+                <div class="form-step">
+                    <div class="form-group">
+                        <label for="content-type">Type de contenu souhaité</label>
+                        <select id="content-type" name="content-type" required>
+                            <option value="">Choisir un type</option>
+                            <option value="photos">Photos</option>
+                            <option value="videos">Vidéos</option>
+                            <option value="audio">Messages audio</option>
+                            <option value="personnalise">Sur mesure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="content-description">Description de votre demande</label>
+                        <textarea id="content-description" name="content-description" rows="4" required placeholder="Décrivez le contenu que vous souhaitez..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-navigation">
+                    <button type="button" id="contentPrevBtn" onclick="changeContentStep(-1)" disabled>Précédent</button>
+                    <button type="button" id="contentNextBtn" onclick="changeContentStep(1)">Suivant</button>
+                    <button type="submit" id="contentSubmitBtn" style="display: none;">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div id="reviewModal" class="modal" aria-labelledby="reviewTitle" role="dialog" aria-modal="false">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal('reviewModal')" aria-label="Fermer">&times;</button>
+            <h3 id="reviewTitle"><i class="fas fa-star" aria-hidden="true"></i> Laisser un Avis</h3>
+            <form id="reviewForm">
+                <input type="hidden" name="_subject" value="Nouvel avis client">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="form-group">
+                    <label for="review-name">Nom ou Pseudo</label>
+                    <input type="text" id="review-name" name="name" required placeholder="Votre nom ou pseudo">
+                </div>
+                <div class="form-group">
+                    <label for="review-rating">Note</label>
+                    <select id="review-rating" name="rating" required>
+                        <option value="">Choisir une note</option>
+                        <option value="5">★★★★★ (5/5)</option>
+                        <option value="4">★★★★☆ (4/5)</option>
+                        <option value="3">★★★☆☆ (3/5)</option>
+                        <option value="2">★★☆☆☆ (2/5)</option>
+                        <option value="1">★☆☆☆☆ (1/5)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review-text">Votre avis</label>
+                    <textarea id="review-text" name="review" rows="4" required placeholder="Partagez votre expérience..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i> Envoyer l'Avis
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script - Chargé en différé pour améliorer les performances -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
+
