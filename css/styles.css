@@ -278,7 +278,7 @@ main {
 .btn-primary {
     /* Simplification du dégradé pour améliorer les performances */
     background: #e91e63;
-    color: var(--text-dark);
+    color: white;
 }
 
 .btn-secondary {
