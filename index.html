@@ -156,7 +156,12 @@
                     <p style="color: #fff; margin-bottom: 1rem; text-align: center;">
                         Accès suite à réservation
                     </p>
-                    <input type="password" id="galleryPassword" placeholder="Mot de passe" aria-label="Mot de passe pour accéder à la galerie privée" />
+                    <div class="password-input-container">
+                        <input type="password" id="galleryPassword" placeholder="Mot de passe" aria-label="Mot de passe pour accéder à la galerie privée" />
+                        <button type="button" class="password-toggle" onclick="togglePasswordVisibility()" aria-label="Afficher/masquer le mot de passe">
+                            <i class="fas fa-eye" id="passwordToggleIcon"></i>
+                        </button>
+                    </div>
                     <button class="btn btn-primary" onclick="checkGalleryPassword()">
                         <i class="fas fa-unlock" aria-hidden="true"></i> Accéder
                     </button>
@@ -208,7 +213,7 @@
                     </div>
                     <div class="about-image">
                         <!-- Image chargée avec data-src pour améliorer les performances -->
-                        <img data-src="assets/images/IMG_6470.png" alt="Lola Anaïs">
+                        <img data-src="assets/images/IMG_6494.jpg" alt="Lola Anaïs">
                     </div>
                 </div>
             </div>
