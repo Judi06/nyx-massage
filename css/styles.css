@@ -415,16 +415,43 @@ main {
     box-sizing: border-box;
 }
 
+.password-input-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
 .gallery-password-form input {
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 3rem 1rem 1rem;
     border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: var(--border-radius-sm);
     background: rgba(255, 255, 255, 0.05);
     color: var(--text-light);
     font-size: 1rem;
-    margin-bottom: 1rem;
     box-sizing: border-box;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #e91e63;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: var(--primary-light);
+}
+
+.password-toggle:focus {
+    outline: 2px solid #e91e63;
+    border-radius: 4px;
 }
 
 .gallery-password-form input::placeholder {
@@ -445,15 +472,23 @@ main {
     overflow: hidden;
     /* Amélioration de la fluidité */
     contain: content;
+    /* Correction pour l'affichage des images */
+    height: 400px;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .gallery-carousel img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain; /* Changé de cover à contain pour éviter le zoom/débordement */
+    object-position: center;
     display: none;
     /* Amélioration de la fluidité */
     will-change: opacity;
+    /* Amélioration de la clarté */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    filter: brightness(1.1) contrast(1.05); /* Amélioration de la clarté */
 }
 
 .gallery-carousel img.active {
