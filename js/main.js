@@ -330,6 +330,24 @@ const LolaApp = (function() {
     }
 
     /**
+     * Basculer la visibilité du mot de passe
+     */
+    function togglePasswordVisibility() {
+        const passwordInput = document.getElementById('galleryPassword');
+        const toggleIcon = document.getElementById('passwordToggleIcon');
+        
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            toggleIcon.classList.remove('fa-eye');
+            toggleIcon.classList.add('fa-eye-slash');
+        } else {
+            passwordInput.type = 'password';
+            toggleIcon.classList.remove('fa-eye-slash');
+            toggleIcon.classList.add('fa-eye');
+        }
+    }
+
+    /**
      * Vérification du mot de passe de la galerie
      */
     function checkGalleryPassword() {
@@ -1037,7 +1055,8 @@ const LolaApp = (function() {
         changeContentStep: changeContentStep,
         nextTestimonial: nextTestimonial,
         previousTestimonial: previousTestimonial,
-        checkGalleryPassword: checkGalleryPassword
+        checkGalleryPassword: checkGalleryPassword,
+        togglePasswordVisibility: togglePasswordVisibility
     };
 })();
 
@@ -1052,4 +1071,5 @@ window.changeContentStep = LolaApp.changeContentStep;
 window.nextTestimonial = LolaApp.nextTestimonial;
 window.previousTestimonial = LolaApp.previousTestimonial;
 window.checkGalleryPassword = LolaApp.checkGalleryPassword;
+window.togglePasswordVisibility = LolaApp.togglePasswordVisibility;
 
